@@ -1,0 +1,73 @@
+/* Страница настроек: сетка контролов и предпросмотр плашки. */
+
+.add-row { margin-bottom: 8px; }
+.add-row input[type='text'] { min-width: 260px; }
+
+#addHint { margin: 0 0 8px; }
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px 20px;
+}
+.ctl { display: flex; flex-direction: column; gap: 6px; }
+.ctl label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--fg-faint); }
+.ctl output { font-variant-numeric: tabular-nums; color: var(--fg-dim); font-size: 13px; min-width: 44px; }
+.ctl p { margin: 0; }
+.ctl label.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  color: var(--fg);
+  cursor: pointer;
+}
+.ctl label.check input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+.style-editor {
+  display: grid;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 460px);
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 880px) {
+  .style-editor { grid-template-columns: 1fr; }
+}
+
+.preview {
+  position: relative;
+  height: 260px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-3);
+}
+.fake-page { padding: 18px; display: flex; flex-direction: column; gap: 12px; }
+.fake-line { height: 10px; border-radius: 5px; background: color-mix(in srgb, var(--fg) 12%, transparent); }
+.w40 { width: 40%; } .w60 { width: 60%; } .w70 { width: 70%; } .w85 { width: 85%; } .w95 { width: 95%; }
+
+.fake-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 14px rgba(0,0,0,.25);
+  font-variant-numeric: tabular-nums;
+  transition: all .2s ease;
+  text-align: center;
+  padding: 6px 10px;
+  line-height: 1.2;
+}
+.fake-panel .p-session { font-weight: 800; }
+.fake-panel .p-domain { opacity: .75; text-transform: uppercase; letter-spacing: .12em; }
+.fake-panel .p-mini { opacity: .7; }
+.fake-panel.p-full { flex-direction: column; gap: 6px; }
+.fake-panel .p-close { position: absolute; top: 50%; right: 5px; transform: translateY(-50%); opacity: .6; font-size: 11px; }
+.fake-panel.p-full .p-close { top: 6px; right: 8px; transform: none; font-size: 14px; }
+
+.sites-actions { display: flex; gap: 6px; justify-content: flex-end; }
+#savedNote { text-align: center; margin-top: 24px; }

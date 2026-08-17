@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="optionsTitle">Site Time Tracker</title>
+  <link rel="stylesheet" href="../common/ui.css" />
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1 data-i18n="appName">Site Time Tracker</h1>
+      <span class="spacer"></span>
+      <button id="openStats" class="primary" data-i18n="optionsOpenStats"></button>
+    </header>
+
+    <section class="card">
+      <h2 data-i18n="optionsSectionSites"></h2>
+      <div class="row add-row">
+        <input type="text" id="domainInput" placeholder="youtube.com" autocomplete="off" spellcheck="false" />
+        <div class="seg" id="newType">
+          <button data-type="waste" class="on" data-i18n="typeWaste"></button>
+          <button data-type="stats" data-i18n="typeStats"></button>
+        </div>
+        <button id="addSite" class="primary" data-i18n="optionsAdd"></button>
+      </div>
+      <p class="muted tiny" id="addHint" data-i18n-html="optionsAddHint"></p>
+      <table id="sitesTable">
+        <thead>
+          <tr>
+            <th data-i18n="optionsThDomain"></th>
+            <th data-i18n="optionsThType"></th>
+            <th data-i18n="optionsThToday"></th>
+            <th data-i18n="optionsThTotal"></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="empty" id="sitesEmpty" hidden data-i18n="optionsSitesEmpty"></p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="optionsSectionStyle"></h2>
+      <div class="seg" id="styleTab" style="margin-bottom:16px">
+        <button data-style="waste" class="on" data-i18n="typeWaste"></button>
+        <button data-style="stats" data-i18n="typeStats"></button>
+      </div>
+
+      <div class="style-editor">
+        <div class="controls" id="styleControls">
+          <div class="ctl"><label for="color" data-i18n="optionsColor"></label><input type="color" id="color" /></div>
+          <div class="ctl"><label for="textColor" data-i18n="optionsTextColor"></label><input type="color" id="textColor" /></div>
+          <div class="ctl">
+            <label for="opacity" data-i18n="optionsOpacity"></label>
+            <div class="row"><input type="range" id="opacity" min="0.1" max="1" step="0.05" /><output id="opacityOut"></output></div>
+          </div>
+          <div class="ctl">
+            <label for="mode" data-i18n="optionsMode"></label>
+            <select id="mode">
+              <option value="fullscreen" data-i18n="optionsModeFullscreen"></option>
+              <option value="edge" data-i18n="optionsModeEdge"></option>
+              <option value="corner" data-i18n="optionsModeCorner"></option>
+            </select>
+          </div>
+          <div class="ctl" id="edgeCtl">
+            <label for="edge" data-i18n="optionsEdge"></label>
+            <select id="edge">
+              <option value="top" data-i18n="optionsEdgeTop"></option>
+              <option value="bottom" data-i18n="optionsEdgeBottom"></option>
+              <option value="left" data-i18n="optionsEdgeLeft"></option>
+              <option value="right" data-i18n="optionsEdgeRight"></option>
+            </select>
+          </div>
+          <div class="ctl" id="cornerCtl">
+            <label for="corner" data-i18n="optionsCorner"></label>
+            <select id="corner">
+              <option value="top-left" data-i18n="optionsCornerTopLeft"></option>
+              <option value="top-right" data-i18n="optionsCornerTopRight"></option>
+              <option value="bottom-left" data-i18n="optionsCornerBottomLeft"></option>
+              <option value="bottom-right" data-i18n="optionsCornerBottomRight"></option>
+            </select>
+          </div>
+          <div class="ctl" id="sizeCtl">
+            <label for="size" data-i18n="optionsSize"></label>
+            <div class="row"><input type="range" id="size" min="32" max="320" step="4" /><output id="sizeOut"></output></div>
+          </div>
+          <div class="ctl">
+            <label for="collapsedSize" data-i18n="optionsCollapsedSize"></label>
+            <div class="row"><input type="range" id="collapsedSize" min="28" max="90" step="2" /><output id="collapsedOut"></output></div>
+          </div>
+          <div class="ctl">
+            <label for="fontScale" data-i18n="optionsFontScale"></label>
+            <div class="row"><input type="range" id="fontScale" min="0.5" max="2" step="0.05" /><output id="fontOut"></output></div>
+          </div>
+        </div>
+
+        <div class="preview-wrap">
+          <div class="preview" id="preview">
+            <div class="fake-page">
+              <div class="fake-line w70"></div><div class="fake-line w95"></div><div class="fake-line w60"></div>
+              <div class="fake-line w85"></div><div class="fake-line w40"></div>
+            </div>
+            <div class="fake-panel" id="fakePanel"></div>
+          </div>
+          <div class="row" style="margin-top:10px">
+            <label class="tiny" data-i18n="optionsPreview"></label>
+            <div class="seg" id="previewState">
+              <button data-state="full" class="on" data-i18n="optionsPreviewFull"></button>
+              <button data-state="collapsed" data-i18n="optionsPreviewCollapsed"></button>
+            </div>
+            <span class="spacer" style="flex:1"></span>
+            <button id="resetStyle" class="ghost tiny" data-i18n="optionsResetStyle"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="optionsSectionBehaviour"></h2>
+      <div class="controls">
+        <div class="ctl">
+          <label for="idleTimeout" data-i18n="optionsIdle"></label>
+          <div class="row"><input type="number" id="idleTimeout" min="15" max="3600" step="5" /></div>
+          <p class="muted tiny" data-i18n="optionsIdleHint"></p>
+        </div>
+        <div class="ctl">
+          <label for="bannerHold" data-i18n="optionsHold"></label>
+          <div class="row"><input type="number" id="bannerHold" min="0" max="120" step="1" /></div>
+          <p class="muted tiny" data-i18n="optionsHoldHint"></p>
+        </div>
+        <div class="ctl">
+          <label data-i18n="optionsStatsClosable"></label>
+          <label class="check"><input type="checkbox" id="statsClosable" /> <span data-i18n="optionsStatsClosableCheck"></span></label>
+          <p class="muted tiny" data-i18n-html="optionsStatsClosableHint"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="optionsSectionData"></h2>
+      <div class="row">
+        <button id="exportBtn" data-i18n="optionsExport"></button>
+        <button id="importBtn" data-i18n="optionsImport"></button>
+        <input type="file" id="importFile" accept="application/json" hidden />
+        <span class="spacer" style="flex:1"></span>
+        <button class="danger" id="resetToday" data-i18n="optionsResetToday"></button>
+        <button class="danger" id="resetMonth" data-i18n="optionsResetMonth"></button>
+        <button class="danger" id="resetAll" data-i18n="optionsResetAll"></button>
+      </div>
+      <p class="muted tiny" style="margin-top:10px" data-i18n="optionsDataHint"></p>
+    </section>
+
+    <p class="muted tiny" id="savedNote" data-i18n="optionsSavedNote"></p>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

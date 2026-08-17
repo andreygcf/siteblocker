@@ -1,0 +1,182 @@
+{
+  "appName": { "message": "Site Time Tracker" },
+  "appDesc": { "message": "Учёт времени на выбранных сайтах: плашка со счётчиком поверх страницы и подробная статистика." },
+
+  "unitHour": { "message": "ч" },
+  "unitMin": { "message": "мин" },
+  "unitSec": { "message": "сек" },
+
+  "typeWaste": { "message": "Трата времени" },
+  "typeStats": { "message": "Статистика" },
+  "typeWasteShort": { "message": "Трата" },
+  "typeWasteLower": { "message": "трата времени" },
+  "typeStatsLower": { "message": "статистика" },
+
+  "overlaySessionCaption": { "message": "в этой сессии" },
+  "overlayToday": { "message": "сегодня" },
+  "overlayMonth": { "message": "за месяц" },
+  "overlayTotal": { "message": "всего" },
+  "overlayHint": { "message": "клик — статистика · двойной клик — свернуть" },
+  "overlayMini": {
+    "message": "сегодня $today$ · всего $total$",
+    "placeholders": {
+      "today": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "overlayCloseTitle": { "message": "Скрыть плашку до закрытия вкладки" },
+  "overlayCloseAria": { "message": "Скрыть плашку" },
+
+  "popupNotTracked": { "message": "Эта страница не отслеживается" },
+  "popupNotInList": { "message": "Сайт не в списке отслеживаемых" },
+  "popupBrowserPage": { "message": "Служебная страница браузера" },
+  "popupRunning": { "message": "Счётчик идёт" },
+  "popupPaused": { "message": "На паузе" },
+  "popupNoConnection": { "message": "Нет связи с трекером" },
+  "popupSession": { "message": "В этой сессии" },
+  "popupToday": { "message": "Сегодня" },
+  "popupMonth": { "message": "За месяц" },
+  "popupTotal": { "message": "Всего" },
+  "popupAddWaste": { "message": "Добавить как «трату»" },
+  "popupAddStats": { "message": "Как «статистику»" },
+
+  "btnStats": { "message": "Статистика" },
+  "btnOptions": { "message": "Настройки" },
+
+  "optionsTitle": { "message": "Настройки — Site Time Tracker" },
+  "optionsOpenStats": { "message": "Открыть статистику" },
+  "optionsSectionSites": { "message": "Отслеживаемые сайты" },
+  "optionsAdd": { "message": "Добавить" },
+  "optionsAddHint": { "message": "Достаточно домена — учитываются все его поддомены. <b>Трата времени</b> — красная плашка на весь экран, <b>Статистика</b> — небольшая полупрозрачная плашка в углу." },
+  "optionsThDomain": { "message": "Домен" },
+  "optionsThType": { "message": "Тип" },
+  "optionsThToday": { "message": "Сегодня" },
+  "optionsThTotal": { "message": "Всего" },
+  "optionsSitesEmpty": { "message": "Пока ни одного сайта не добавлено" },
+  "optionsSiteEnable": { "message": "Включить" },
+  "optionsSiteDisable": { "message": "Выключить" },
+  "optionsSiteDelete": { "message": "Удалить" },
+
+  "optionsSectionStyle": { "message": "Стиль плашки" },
+  "optionsColor": { "message": "Цвет фона" },
+  "optionsTextColor": { "message": "Цвет текста" },
+  "optionsOpacity": { "message": "Прозрачность" },
+  "optionsMode": { "message": "Расположение" },
+  "optionsModeFullscreen": { "message": "Весь экран" },
+  "optionsModeEdge": { "message": "Полоса у края" },
+  "optionsModeCorner": { "message": "Плашка в углу" },
+  "optionsEdge": { "message": "Край" },
+  "optionsEdgeTop": { "message": "Сверху" },
+  "optionsEdgeBottom": { "message": "Снизу" },
+  "optionsEdgeLeft": { "message": "Слева" },
+  "optionsEdgeRight": { "message": "Справа" },
+  "optionsCorner": { "message": "Угол" },
+  "optionsCornerTopLeft": { "message": "Сверху слева" },
+  "optionsCornerTopRight": { "message": "Сверху справа" },
+  "optionsCornerBottomLeft": { "message": "Снизу слева" },
+  "optionsCornerBottomRight": { "message": "Снизу справа" },
+  "optionsSize": { "message": "Размер, px" },
+  "optionsCollapsedSize": { "message": "Размер свёрнутой, px" },
+  "optionsFontScale": { "message": "Масштаб шрифта" },
+  "optionsPreview": { "message": "Предпросмотр:" },
+  "optionsPreviewFull": { "message": "развёрнутая" },
+  "optionsPreviewCollapsed": { "message": "свёрнутая" },
+  "optionsResetStyle": { "message": "Сбросить стиль" },
+  "optionsStyleReset": { "message": "Стиль сброшен к стандартному" },
+
+  "optionsSectionBehaviour": { "message": "Поведение" },
+  "optionsIdle": { "message": "Пауза после бездействия, сек" },
+  "optionsIdleHint": { "message": "Если мышь и клавиатура не используются столько времени, счётчик встаёт на паузу. Минимум — 15 сек." },
+  "optionsHold": { "message": "Полноэкранная плашка держится, сек" },
+  "optionsHoldHint": { "message": "Затем сворачивается в компактный бейдж. 0 — сворачивать сразу." },
+  "optionsStatsClosable": { "message": "Плашку «Статистика» можно закрыть" },
+  "optionsStatsClosableCheck": { "message": "показывать крестик на плашке" },
+  "optionsStatsClosableHint": { "message": "Плашка скрывается до закрытия вкладки, время при этом продолжает считаться. У сайтов типа <b>Трата времени</b> крестика нет никогда." },
+
+  "optionsSectionData": { "message": "Данные" },
+  "optionsExport": { "message": "Экспорт в JSON" },
+  "optionsImport": { "message": "Импорт из JSON" },
+  "optionsResetToday": { "message": "Сбросить за сегодня" },
+  "optionsResetMonth": { "message": "Сбросить за месяц" },
+  "optionsResetAll": { "message": "Сбросить всё" },
+  "optionsDataHint": { "message": "Сброс касается всех сайтов. Сброс по одному сайту — на странице статистики." },
+  "optionsSavedNote": { "message": "Изменения сохраняются автоматически." },
+
+  "optionsBadDomain": { "message": "Не похоже на домен — введите, например, youtube.com" },
+  "optionsAlreadyAdded": {
+    "message": "$domain$ уже в списке",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsAdded": {
+    "message": "$domain$ добавлен",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmRemove": {
+    "message": "Удалить $domain$ из списка.\n\nOK — удалить вместе со всей накопленной статистикой.\nОтмена — убрать только из списка, статистику сохранить.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmImport": { "message": "Импорт заменит текущий список сайтов, настройки и статистику. Продолжить?" },
+  "optionsImported": { "message": "Данные импортированы" },
+  "optionsImportFailed": {
+    "message": "Не удалось прочитать файл: $error$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "optionsConfirmResetToday": { "message": "Сбросить статистику за сегодня по всем сайтам?" },
+  "optionsConfirmResetMonth": { "message": "Сбросить статистику за текущий месяц по всем сайтам?" },
+  "optionsConfirmResetAll": { "message": "Удалить всю статистику по всем сайтам за всё время? Действие необратимо." },
+  "optionsStatsReset": { "message": "Статистика сброшена" },
+
+  "statsTitle": { "message": "Статистика — Site Time Tracker" },
+  "statsHeading": { "message": "Статистика" },
+  "statsAllSites": { "message": "Все сайты" },
+  "statsByDays": { "message": "По дням" },
+  "statsRangeDays": {
+    "message": "$n$ дней",
+    "placeholders": { "n": { "content": "$1" } }
+  },
+  "statsCumulative": { "message": "Накопительно за текущий месяц" },
+  "statsCalendar": { "message": "Календарь" },
+  "statsCompare": { "message": "Сравнение сайтов" },
+  "statsCompareToday": { "message": "сегодня" },
+  "statsCompareMonth": { "message": "месяц" },
+  "statsCompareTotal": { "message": "всего" },
+  "statsReset": { "message": "Сброс статистики" },
+  "statsResetToday": { "message": "За сегодня" },
+  "statsResetMonth": { "message": "За текущий месяц" },
+  "statsResetSite": { "message": "Всю по этому сайту" },
+  "statsResetEverything": { "message": "Всю целиком" },
+  "statsTileToday": { "message": "Сегодня" },
+  "statsTileWeek": { "message": "За 7 дней" },
+  "statsTileMonth": { "message": "За месяц" },
+  "statsTileTotal": { "message": "Всего" },
+  "statsTileAverage": { "message": "В среднем в день" },
+  "statsTileBest": { "message": "Рекорд за день" },
+  "statsScopeAll": { "message": "Сейчас выбраны все сайты — сброс затронет статистику по всем из них." },
+  "statsScopeSite": {
+    "message": "Сейчас выбран $domain$ — первые три кнопки затрагивают только его.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "statsScopeAllDative": { "message": "всем сайтам" },
+  "statsDeletedSite": { "message": "удалённому сайту" },
+  "statsConfirmToday": {
+    "message": "Сбросить статистику за сегодня по $who$?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmMonth": {
+    "message": "Сбросить статистику за текущий месяц по $who$?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmAll": {
+    "message": "Удалить всю статистику по $who$? Действие необратимо.",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmEverything": { "message": "Удалить всю статистику по всем сайтам за всё время? Действие необратимо." },
+  "statsLineTip": {
+    "message": "$day$-е: накоплено $value$",
+    "placeholders": {
+      "day": { "content": "$1" },
+      "value": { "content": "$2" }
+    }
+  },
+  "chartNoData": { "message": "Нет данных за период" }
+}

@@ -1,0 +1,182 @@
+{
+  "appName": { "message": "Site Time Tracker" },
+  "appDesc": { "message": "Mesure le temps passé sur les sites choisis : un compteur affiché par-dessus la page et des statistiques détaillées." },
+
+  "unitHour": { "message": "h" },
+  "unitMin": { "message": "min" },
+  "unitSec": { "message": "s" },
+
+  "typeWaste": { "message": "Perte de temps" },
+  "typeStats": { "message": "Statistiques" },
+  "typeWasteShort": { "message": "Perte" },
+  "typeWasteLower": { "message": "perte de temps" },
+  "typeStatsLower": { "message": "statistiques" },
+
+  "overlaySessionCaption": { "message": "cette session" },
+  "overlayToday": { "message": "aujourd’hui" },
+  "overlayMonth": { "message": "ce mois-ci" },
+  "overlayTotal": { "message": "au total" },
+  "overlayHint": { "message": "clic — statistiques · double-clic — réduire" },
+  "overlayMini": {
+    "message": "aujourd’hui $today$ · au total $total$",
+    "placeholders": {
+      "today": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "overlayCloseTitle": { "message": "Masquer le bandeau jusqu’à la fermeture de l’onglet" },
+  "overlayCloseAria": { "message": "Masquer le bandeau" },
+
+  "popupNotTracked": { "message": "Cette page n’est pas suivie" },
+  "popupNotInList": { "message": "Le site n’est pas dans la liste suivie" },
+  "popupBrowserPage": { "message": "Page interne du navigateur" },
+  "popupRunning": { "message": "Compteur en marche" },
+  "popupPaused": { "message": "En pause" },
+  "popupNoConnection": { "message": "Pas de connexion au tracker" },
+  "popupSession": { "message": "Cette session" },
+  "popupToday": { "message": "Aujourd’hui" },
+  "popupMonth": { "message": "Ce mois-ci" },
+  "popupTotal": { "message": "Au total" },
+  "popupAddWaste": { "message": "Ajouter comme « perte de temps »" },
+  "popupAddStats": { "message": "Comme « statistiques »" },
+
+  "btnStats": { "message": "Statistiques" },
+  "btnOptions": { "message": "Paramètres" },
+
+  "optionsTitle": { "message": "Paramètres — Site Time Tracker" },
+  "optionsOpenStats": { "message": "Ouvrir les statistiques" },
+  "optionsSectionSites": { "message": "Sites suivis" },
+  "optionsAdd": { "message": "Ajouter" },
+  "optionsAddHint": { "message": "Le domaine suffit — tous ses sous-domaines sont pris en compte. <b>Perte de temps</b> — un bandeau rouge en plein écran, <b>Statistiques</b> — un petit bandeau translucide dans un coin." },
+  "optionsThDomain": { "message": "Domaine" },
+  "optionsThType": { "message": "Type" },
+  "optionsThToday": { "message": "Aujourd’hui" },
+  "optionsThTotal": { "message": "Au total" },
+  "optionsSitesEmpty": { "message": "Aucun site ajouté pour l’instant" },
+  "optionsSiteEnable": { "message": "Activer" },
+  "optionsSiteDisable": { "message": "Désactiver" },
+  "optionsSiteDelete": { "message": "Supprimer" },
+
+  "optionsSectionStyle": { "message": "Style du bandeau" },
+  "optionsColor": { "message": "Couleur de fond" },
+  "optionsTextColor": { "message": "Couleur du texte" },
+  "optionsOpacity": { "message": "Opacité" },
+  "optionsMode": { "message": "Emplacement" },
+  "optionsModeFullscreen": { "message": "Plein écran" },
+  "optionsModeEdge": { "message": "Bande sur un bord" },
+  "optionsModeCorner": { "message": "Bandeau dans un coin" },
+  "optionsEdge": { "message": "Bord" },
+  "optionsEdgeTop": { "message": "En haut" },
+  "optionsEdgeBottom": { "message": "En bas" },
+  "optionsEdgeLeft": { "message": "À gauche" },
+  "optionsEdgeRight": { "message": "À droite" },
+  "optionsCorner": { "message": "Coin" },
+  "optionsCornerTopLeft": { "message": "En haut à gauche" },
+  "optionsCornerTopRight": { "message": "En haut à droite" },
+  "optionsCornerBottomLeft": { "message": "En bas à gauche" },
+  "optionsCornerBottomRight": { "message": "En bas à droite" },
+  "optionsSize": { "message": "Taille, px" },
+  "optionsCollapsedSize": { "message": "Taille réduite, px" },
+  "optionsFontScale": { "message": "Échelle de la police" },
+  "optionsPreview": { "message": "Aperçu :" },
+  "optionsPreviewFull": { "message": "déployé" },
+  "optionsPreviewCollapsed": { "message": "réduit" },
+  "optionsResetStyle": { "message": "Réinitialiser le style" },
+  "optionsStyleReset": { "message": "Style réinitialisé par défaut" },
+
+  "optionsSectionBehaviour": { "message": "Comportement" },
+  "optionsIdle": { "message": "Pause après inactivité, s" },
+  "optionsIdleHint": { "message": "Si la souris et le clavier restent inutilisés pendant ce temps, le compteur se met en pause. Minimum — 15 s." },
+  "optionsHold": { "message": "Le bandeau plein écran reste, s" },
+  "optionsHoldHint": { "message": "Ensuite il se réduit en badge compact. 0 — réduire immédiatement." },
+  "optionsStatsClosable": { "message": "Le bandeau « Statistiques » peut être fermé" },
+  "optionsStatsClosableCheck": { "message": "afficher une croix sur le bandeau" },
+  "optionsStatsClosableHint": { "message": "Le bandeau reste masqué jusqu’à la fermeture de l’onglet, le temps continue d’être compté. Les sites de type <b>Perte de temps</b> n’ont jamais de croix." },
+
+  "optionsSectionData": { "message": "Données" },
+  "optionsExport": { "message": "Exporter en JSON" },
+  "optionsImport": { "message": "Importer depuis JSON" },
+  "optionsResetToday": { "message": "Réinitialiser aujourd’hui" },
+  "optionsResetMonth": { "message": "Réinitialiser le mois" },
+  "optionsResetAll": { "message": "Tout réinitialiser" },
+  "optionsDataHint": { "message": "La réinitialisation concerne tous les sites. Pour un seul site, utilisez la page des statistiques." },
+  "optionsSavedNote": { "message": "Les modifications sont enregistrées automatiquement." },
+
+  "optionsBadDomain": { "message": "Cela ne ressemble pas à un domaine — saisissez par exemple youtube.com" },
+  "optionsAlreadyAdded": {
+    "message": "$domain$ est déjà dans la liste",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsAdded": {
+    "message": "$domain$ ajouté",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmRemove": {
+    "message": "Retirer $domain$ de la liste.\n\nOK — supprimer avec toutes les statistiques accumulées.\nAnnuler — retirer seulement de la liste, garder les statistiques.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmImport": { "message": "L’import remplacera la liste des sites, les paramètres et les statistiques actuels. Continuer ?" },
+  "optionsImported": { "message": "Données importées" },
+  "optionsImportFailed": {
+    "message": "Impossible de lire le fichier : $error$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "optionsConfirmResetToday": { "message": "Réinitialiser les statistiques d’aujourd’hui pour tous les sites ?" },
+  "optionsConfirmResetMonth": { "message": "Réinitialiser les statistiques du mois en cours pour tous les sites ?" },
+  "optionsConfirmResetAll": { "message": "Supprimer toutes les statistiques de tous les sites pour toute la période ? Action irréversible." },
+  "optionsStatsReset": { "message": "Statistiques réinitialisées" },
+
+  "statsTitle": { "message": "Statistiques — Site Time Tracker" },
+  "statsHeading": { "message": "Statistiques" },
+  "statsAllSites": { "message": "Tous les sites" },
+  "statsByDays": { "message": "Par jour" },
+  "statsRangeDays": {
+    "message": "$n$ jours",
+    "placeholders": { "n": { "content": "$1" } }
+  },
+  "statsCumulative": { "message": "Cumul du mois en cours" },
+  "statsCalendar": { "message": "Calendrier" },
+  "statsCompare": { "message": "Comparaison des sites" },
+  "statsCompareToday": { "message": "aujourd’hui" },
+  "statsCompareMonth": { "message": "mois" },
+  "statsCompareTotal": { "message": "au total" },
+  "statsReset": { "message": "Réinitialiser les statistiques" },
+  "statsResetToday": { "message": "Aujourd’hui" },
+  "statsResetMonth": { "message": "Mois en cours" },
+  "statsResetSite": { "message": "Tout pour ce site" },
+  "statsResetEverything": { "message": "Absolument tout" },
+  "statsTileToday": { "message": "Aujourd’hui" },
+  "statsTileWeek": { "message": "7 derniers jours" },
+  "statsTileMonth": { "message": "Ce mois-ci" },
+  "statsTileTotal": { "message": "Au total" },
+  "statsTileAverage": { "message": "Moyenne par jour" },
+  "statsTileBest": { "message": "Record sur un jour" },
+  "statsScopeAll": { "message": "Tous les sites sont sélectionnés — la réinitialisation touchera les statistiques de chacun d’eux." },
+  "statsScopeSite": {
+    "message": "$domain$ est sélectionné — les trois premiers boutons ne concernent que lui.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "statsScopeAllDative": { "message": "tous les sites" },
+  "statsDeletedSite": { "message": "le site supprimé" },
+  "statsConfirmToday": {
+    "message": "Réinitialiser les statistiques d’aujourd’hui pour $who$ ?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmMonth": {
+    "message": "Réinitialiser les statistiques du mois en cours pour $who$ ?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmAll": {
+    "message": "Supprimer toutes les statistiques pour $who$ ? Action irréversible.",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmEverything": { "message": "Supprimer toutes les statistiques de tous les sites pour toute la période ? Action irréversible." },
+  "statsLineTip": {
+    "message": "jour $day$ : $value$ cumulées",
+    "placeholders": {
+      "day": { "content": "$1" },
+      "value": { "content": "$2" }
+    }
+  },
+  "chartNoData": { "message": "Aucune donnée pour cette période" }
+}

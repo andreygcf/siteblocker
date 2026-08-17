@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="statsTitle">Site Time Tracker</title>
+  <link rel="stylesheet" href="../common/ui.css" />
+  <link rel="stylesheet" href="stats.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1 data-i18n="statsHeading"></h1>
+      <select id="siteSelect"></select>
+      <span class="spacer"></span>
+      <button id="openOptions" class="ghost" data-i18n="btnOptions"></button>
+    </header>
+
+    <section class="tiles" id="tiles"></section>
+
+    <section class="card">
+      <div class="row" style="margin-bottom:14px">
+        <h2 style="margin:0" data-i18n="statsByDays"></h2>
+        <span class="spacer" style="flex:1"></span>
+        <div class="seg" id="rangeSeg">
+          <button data-range="7"></button>
+          <button data-range="30" class="on"></button>
+          <button data-range="90"></button>
+        </div>
+      </div>
+      <div class="chart" id="barChart"></div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="statsCumulative"></h2>
+      <div class="chart" id="lineChart"></div>
+    </section>
+
+    <section class="card">
+      <div class="row" style="margin-bottom:14px">
+        <h2 style="margin:0" data-i18n="statsCalendar"></h2>
+        <span class="spacer" style="flex:1"></span>
+        <select id="yearSelect"></select>
+      </div>
+      <div class="chart" id="heatmap"></div>
+    </section>
+
+    <section class="card" id="compareCard">
+      <div class="row" style="margin-bottom:14px">
+        <h2 style="margin:0" data-i18n="statsCompare"></h2>
+        <span class="spacer" style="flex:1"></span>
+        <div class="seg" id="compareSeg">
+          <button data-range="1" class="on" data-i18n="statsCompareToday"></button>
+          <button data-range="30" data-i18n="statsCompareMonth"></button>
+          <button data-range="0" data-i18n="statsCompareTotal"></button>
+        </div>
+      </div>
+      <div class="chart" id="hbar"></div>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="statsReset"></h2>
+      <p class="muted tiny" id="resetScopeNote"></p>
+      <div class="row" style="margin-top:12px">
+        <button class="danger" data-reset="today" data-i18n="statsResetToday"></button>
+        <button class="danger" data-reset="month" data-i18n="statsResetMonth"></button>
+        <button class="danger" data-reset="all" data-i18n="statsResetSite"></button>
+        <button class="danger" data-reset="everything" data-i18n="statsResetEverything"></button>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="stats.js"></script>
+</body>
+</html>

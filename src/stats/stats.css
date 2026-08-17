@@ -1,0 +1,17 @@
+/* Локальные штрихи страницы статистики. */
+
+header.top select {
+  min-width: 220px;
+}
+
+#heatmap {
+  padding-bottom: 4px;
+}
+
+.tiles {
+  margin-bottom: 18px;
+}
+
+#compareCard .chart {
+  min-height: 40px;
+}

@@ -1,0 +1,182 @@
+{
+  "appName": { "message": "Site Time Tracker" },
+  "appDesc": { "message": "Tracks time spent on selected sites: an on-page counter badge and detailed statistics." },
+
+  "unitHour": { "message": "h" },
+  "unitMin": { "message": "min" },
+  "unitSec": { "message": "sec" },
+
+  "typeWaste": { "message": "Time sink" },
+  "typeStats": { "message": "Statistics" },
+  "typeWasteShort": { "message": "Sink" },
+  "typeWasteLower": { "message": "time sink" },
+  "typeStatsLower": { "message": "statistics" },
+
+  "overlaySessionCaption": { "message": "this session" },
+  "overlayToday": { "message": "today" },
+  "overlayMonth": { "message": "this month" },
+  "overlayTotal": { "message": "all time" },
+  "overlayHint": { "message": "click — statistics · double click — collapse" },
+  "overlayMini": {
+    "message": "today $today$ · all time $total$",
+    "placeholders": {
+      "today": { "content": "$1" },
+      "total": { "content": "$2" }
+    }
+  },
+  "overlayCloseTitle": { "message": "Hide the badge until the tab is closed" },
+  "overlayCloseAria": { "message": "Hide the badge" },
+
+  "popupNotTracked": { "message": "This page is not tracked" },
+  "popupNotInList": { "message": "Site is not in the tracked list" },
+  "popupBrowserPage": { "message": "Internal browser page" },
+  "popupRunning": { "message": "Counter is running" },
+  "popupPaused": { "message": "Paused" },
+  "popupNoConnection": { "message": "No connection to the tracker" },
+  "popupSession": { "message": "This session" },
+  "popupToday": { "message": "Today" },
+  "popupMonth": { "message": "This month" },
+  "popupTotal": { "message": "All time" },
+  "popupAddWaste": { "message": "Add as “time sink”" },
+  "popupAddStats": { "message": "As “statistics”" },
+
+  "btnStats": { "message": "Statistics" },
+  "btnOptions": { "message": "Settings" },
+
+  "optionsTitle": { "message": "Settings — Site Time Tracker" },
+  "optionsOpenStats": { "message": "Open statistics" },
+  "optionsSectionSites": { "message": "Tracked sites" },
+  "optionsAdd": { "message": "Add" },
+  "optionsAddHint": { "message": "The domain is enough — all its subdomains count too. <b>Time sink</b> — a red full-screen badge, <b>Statistics</b> — a small translucent badge in the corner." },
+  "optionsThDomain": { "message": "Domain" },
+  "optionsThType": { "message": "Type" },
+  "optionsThToday": { "message": "Today" },
+  "optionsThTotal": { "message": "All time" },
+  "optionsSitesEmpty": { "message": "No sites added yet" },
+  "optionsSiteEnable": { "message": "Enable" },
+  "optionsSiteDisable": { "message": "Disable" },
+  "optionsSiteDelete": { "message": "Delete" },
+
+  "optionsSectionStyle": { "message": "Badge style" },
+  "optionsColor": { "message": "Background color" },
+  "optionsTextColor": { "message": "Text color" },
+  "optionsOpacity": { "message": "Opacity" },
+  "optionsMode": { "message": "Placement" },
+  "optionsModeFullscreen": { "message": "Full screen" },
+  "optionsModeEdge": { "message": "Bar at the edge" },
+  "optionsModeCorner": { "message": "Badge in a corner" },
+  "optionsEdge": { "message": "Edge" },
+  "optionsEdgeTop": { "message": "Top" },
+  "optionsEdgeBottom": { "message": "Bottom" },
+  "optionsEdgeLeft": { "message": "Left" },
+  "optionsEdgeRight": { "message": "Right" },
+  "optionsCorner": { "message": "Corner" },
+  "optionsCornerTopLeft": { "message": "Top left" },
+  "optionsCornerTopRight": { "message": "Top right" },
+  "optionsCornerBottomLeft": { "message": "Bottom left" },
+  "optionsCornerBottomRight": { "message": "Bottom right" },
+  "optionsSize": { "message": "Size, px" },
+  "optionsCollapsedSize": { "message": "Collapsed size, px" },
+  "optionsFontScale": { "message": "Font scale" },
+  "optionsPreview": { "message": "Preview:" },
+  "optionsPreviewFull": { "message": "expanded" },
+  "optionsPreviewCollapsed": { "message": "collapsed" },
+  "optionsResetStyle": { "message": "Reset style" },
+  "optionsStyleReset": { "message": "Style reset to default" },
+
+  "optionsSectionBehaviour": { "message": "Behavior" },
+  "optionsIdle": { "message": "Pause after idle, sec" },
+  "optionsIdleHint": { "message": "If the mouse and keyboard stay unused for that long, the counter pauses. Minimum — 15 sec." },
+  "optionsHold": { "message": "Full-screen badge stays, sec" },
+  "optionsHoldHint": { "message": "Then it collapses into a compact badge. 0 — collapse immediately." },
+  "optionsStatsClosable": { "message": "The “Statistics” badge can be closed" },
+  "optionsStatsClosableCheck": { "message": "show a close button on the badge" },
+  "optionsStatsClosableHint": { "message": "The badge hides until the tab is closed; time keeps being counted. Sites of type <b>Time sink</b> never get a close button." },
+
+  "optionsSectionData": { "message": "Data" },
+  "optionsExport": { "message": "Export to JSON" },
+  "optionsImport": { "message": "Import from JSON" },
+  "optionsResetToday": { "message": "Reset today" },
+  "optionsResetMonth": { "message": "Reset this month" },
+  "optionsResetAll": { "message": "Reset everything" },
+  "optionsDataHint": { "message": "Resetting affects all sites. To reset a single site, use the statistics page." },
+  "optionsSavedNote": { "message": "Changes are saved automatically." },
+
+  "optionsBadDomain": { "message": "That does not look like a domain — enter something like youtube.com" },
+  "optionsAlreadyAdded": {
+    "message": "$domain$ is already in the list",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsAdded": {
+    "message": "$domain$ added",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmRemove": {
+    "message": "Remove $domain$ from the list.\n\nOK — delete it together with all collected statistics.\nCancel — remove from the list only, keep the statistics.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "optionsConfirmImport": { "message": "Importing will replace the current site list, settings and statistics. Continue?" },
+  "optionsImported": { "message": "Data imported" },
+  "optionsImportFailed": {
+    "message": "Could not read the file: $error$",
+    "placeholders": { "error": { "content": "$1" } }
+  },
+  "optionsConfirmResetToday": { "message": "Reset today's statistics for all sites?" },
+  "optionsConfirmResetMonth": { "message": "Reset this month's statistics for all sites?" },
+  "optionsConfirmResetAll": { "message": "Delete all statistics for all sites for all time? This cannot be undone." },
+  "optionsStatsReset": { "message": "Statistics reset" },
+
+  "statsTitle": { "message": "Statistics — Site Time Tracker" },
+  "statsHeading": { "message": "Statistics" },
+  "statsAllSites": { "message": "All sites" },
+  "statsByDays": { "message": "By day" },
+  "statsRangeDays": {
+    "message": "$n$ days",
+    "placeholders": { "n": { "content": "$1" } }
+  },
+  "statsCumulative": { "message": "Cumulative for the current month" },
+  "statsCalendar": { "message": "Calendar" },
+  "statsCompare": { "message": "Site comparison" },
+  "statsCompareToday": { "message": "today" },
+  "statsCompareMonth": { "message": "month" },
+  "statsCompareTotal": { "message": "all time" },
+  "statsReset": { "message": "Reset statistics" },
+  "statsResetToday": { "message": "Today" },
+  "statsResetMonth": { "message": "Current month" },
+  "statsResetSite": { "message": "Everything for this site" },
+  "statsResetEverything": { "message": "Absolutely everything" },
+  "statsTileToday": { "message": "Today" },
+  "statsTileWeek": { "message": "Last 7 days" },
+  "statsTileMonth": { "message": "This month" },
+  "statsTileTotal": { "message": "All time" },
+  "statsTileAverage": { "message": "Average per day" },
+  "statsTileBest": { "message": "Best day" },
+  "statsScopeAll": { "message": "All sites are selected — the reset will affect the statistics of every one of them." },
+  "statsScopeSite": {
+    "message": "$domain$ is selected — the first three buttons affect only this site.",
+    "placeholders": { "domain": { "content": "$1" } }
+  },
+  "statsScopeAllDative": { "message": "all sites" },
+  "statsDeletedSite": { "message": "the deleted site" },
+  "statsConfirmToday": {
+    "message": "Reset today's statistics for $who$?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmMonth": {
+    "message": "Reset this month's statistics for $who$?",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmAll": {
+    "message": "Delete all statistics for $who$? This cannot be undone.",
+    "placeholders": { "who": { "content": "$1" } }
+  },
+  "statsConfirmEverything": { "message": "Delete all statistics for all sites for all time? This cannot be undone." },
+  "statsLineTip": {
+    "message": "day $day$: $value$ accumulated",
+    "placeholders": {
+      "day": { "content": "$1" },
+      "value": { "content": "$2" }
+    }
+  },
+  "chartNoData": { "message": "No data for this period" }
+}
